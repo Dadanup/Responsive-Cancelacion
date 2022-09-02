@@ -9,7 +9,8 @@
     <title>OPL CANCELACION</title>
 </head>
 <body>
-    <!-- <nav class="navbar navbar-expand-lg bg-qualitas">
+
+    <nav class="navbar navbar-expand-lg bg-NavQualitas">
         <div class="container-fluid">
             <a class="navbar-brand text-white" href="https://www.qualitas.com.mx" target="_blank">
                 <img src="assets/images/logo-qualitas-blanco.png" alt="" width="82" height="92" class="d-inline-block align-text-top">
@@ -49,10 +50,132 @@
         <a class="navbar-brand text-white" href="http://www.qualitas.com.mx" target="_blank">
             <img src="imagenes/spacer.gif" width="82" border="0">
         </a>
-    </nav> -->
+    </nav>
     <div class="container">
-        bs5-grid-row
+        <h2>Cancelar Póliza</h2>
+        <form action="" class="design__form">
+            <hr>
+            <div class="row mb-2">
+                <div class="col-md-12">
+                    <div class="row mb-2">
+                        <label for="uCancel" class="col-md-4 col-form-label col-form-label-sm">Usuario que Emite la Cancelación</label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control form-control-sm" id="uCancel" value="Bautista Banda Jesús Daniel" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="uCancel" class="col-md-4 col-form-label col-form-label-sm">Usuario Asegurado </label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control form-control-sm" id="uCancel" value="Banda Bautista Daniel Jesús" disabled readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row mb-1 mt-2">
+                        <h5>Datos de la Póliza</h5>
+                      </div>
+                    <div class="row  mb-1">
+                        <label for="pVenta" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Punto de Venta</label>
+                        <div class="col-sm-10 col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="pVenta" value="QUALITAS" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="poliza" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Póliza</label>
+                        <div class="col-sm-10 col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="poliza" value="1234567890" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="nombre" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Nombre</label>
+                        <div class="col-sm-10 col-md-8">
+                        <input type="text" class="form-control form-control-sm" id="nombre" value="Bautista Banda Jesus Daniel" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="nombre" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">No. de Empleado</label>
+                        <div class="col-sm-10 col-md-8">
+                        <input type="text" class="form-control form-control-sm" id="nombre" value="1234567890" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row mb-1 mt-4">
+                        <h5>Datos del Automóvil</h5>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="marca" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Marca</label>
+                        <div class="col-sm-10 col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="marca" value="BMW" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="modelo" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Modelo</label>
+                        <div class="col-sm-10 col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="modelo" value="2022" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="descrip" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Descripción</label>
+                        <div class="col-sm-10 col-md-8">
+                        <input type="text" class="form-control form-control-sm" id="descrip" value="BORA SPORT TIPTRONIC AUT., 05 OCUP." disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="serie" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">No. de Serie</label>
+                        <div class="col-sm-10 col-md-4">
+                        <input type="text" class="form-control form-control-sm" id="serie" value="1234567890" disabled readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row mb-1 mt-2">
+                        <h5>Solicitud de Cancelación</h5>
+                      </div>
+                    <div class="row  mb-1">
+                        <label for="pVenta" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Inicio Vigencia</label>
+                        <div class="col-sm-10 col-md-4">
+                        <input type="date" class="form-control form-control-sm" id="pVenta" value="2012-03-01" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="poliza" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Fin Vigencia</label>
+                        <div class="col-sm-10 col-md-4">
+                        <input type="date" class="form-control form-control-sm" id="poliza" value="2012-03-01" disabled readonly>
+                        </div>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="nombre" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Fecha Cancelación</label>
+                        <div class="col-sm-10 col-md-4">
+                        <input type="date" class="form-control form-control-sm" id="nombre">
+                        </div>
+                    </div>
+                    <div class="row  mb-1">
+                        <label for="motivo" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Motivo</label>
+                        <div class="col-sm-10 col-md-8">
+                        <select name="" id="motivo" class="form-select form-control-sm">
+                            <option value="">Selecciona una Opción</option>
+                            <option value="Por Venta de Unidad">Por Venta de Unidad</option>
+                            <option value="Dejo de Laborar">Dejo de Laborar</option>
+                            <option value="Error de Emision">Error de Emision</option>
+                            <option value="Por Falta de Pago">Por Falta de Pago</option>
+                            <option value="Por Perdida Total">Por Perdida Total</option>
+                            <option value="Sustitucion de Poliza">Sustitucion de Poliza</option>
+                            <option value="A solicitud">A solicitud</option>
+                            <option value="Falta de capacidad de credito">Falta de capacidad de credito</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
     </div>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
