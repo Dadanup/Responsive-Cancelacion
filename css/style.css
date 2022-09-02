@@ -1,0 +1,18 @@
+:root{
+    /* COLORES */
+    --color-1:#941b80;
+
+    --color-2:#ECECEC;
+}
+
+/*NAVBAR */
+.bg-qualitas{
+    background-color: var(--color-1);
+}
+
+/* FORMULARIO */
+.container{
+    background-color: var(--color-2);
+    width: 100px;
+    height: 100px;
+}
