@@ -11,481 +11,478 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- TAB CONTROLLERS -->
-<input id="panel-1-ctrl" class="panel-radios" type="radio" name="tab-radios" checked hidden>
-<input id="panel-2-ctrl" class="panel-radios" type="radio" name="tab-radios" hidden>
-<input id="nav-ctrl" class="panel-radios" type="checkbox" name="nav-checkbox" hidden>
+    <div class="container">
+        <!-- TAB CONTROLLERS -->
+        <input id="panel-1-ctrl" class="panel-radios" type="radio" name="tab-radios" checked hidden>
+        <input id="panel-2-ctrl" class="panel-radios" type="radio" name="tab-radios" hidden>
+        <input id="nav-ctrl" class="panel-radios" type="checkbox" name="nav-checkbox" hidden>
 
 
 
-<!-- TABS LIST -->
-<ul id="tabs-list">
-    <!-- MENU TOGGLE -->
-    <label id="open-nav-label" for="nav-ctrl"></label>
-        <li id="li-for-panel-1">
-            <label class="panel-label" for="panel-1-ctrl">Datos del Asegurado</label>
-        </li>
-        <li id="li-for-panel-2">
-            <label class="panel-label" for="panel-2-ctrl">Articulo Quien sabe cual</label>
-        </li>
+        <!-- TABS LIST -->
+        <ul id="tabs-list">
+            <!-- MENU TOGGLE -->
+            <label id="open-nav-label" for="nav-ctrl"></label>
+                <li id="li-for-panel-1">
+                    <label class="panel-label" for="panel-1-ctrl">Datos del Asegurado</label>
+                </li>
+                <li id="li-for-panel-2">
+                    <label class="panel-label" for="panel-2-ctrl">Articulo Quien sabe cual</label>
+                </li>
 
-    <label id="close-nav-label" for="nav-ctrl">Close</label>
-</ul>
+            <label id="close-nav-label" for="nav-ctrl">Close</label>
+        </ul>
 
-<!-- THE PANELS -->
-<article id="panels">
-    <div class="container_tab">
-        <section id="panel-1">
-            <main>
-                <h2>Modificar Datos</h2>
-            <form action="" class="design__form">
-              <div class="row mt-4">
-                <div class="col-md-2 col-sm-12">
-                    <p>Datos Personales</p>
-                </div>
-                <div class="col-md-10 col-sm-12">
-                    <div class="row mb-2">
-                        <div class="col-md-4 col-sm-12">
-                            <label for="aPate" class="form-label col-form-label col-form-label-sm">Apellido Paterno</label>
-                            <input type="text" class="form-control form-control-sm" id="aPate">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <label for="aMate" class="form-label col-form-label col-form-label-sm">Apellido Materno</label>
-                            <input type="text" class="form-control form-control-sm" id="aMate">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <label for="nombre" class="form-label col-form-label col-form-label-sm">Nombre(s)</label>
-                            <input type="text" class="form-control form-control-sm" id="nombre">
-                        </div>
-                    </div>
-                    <div class="row mb-2">
-                        <div class="col-md-4 col-sm-12">
-                            <label for="rfc" class="form-label col-form-label col-form-label-sm">R.F.C.</label>
-                            <input type="text" class="form-control form-control-sm" id="rfc">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <label for="curp" class="form-label col-form-label col-form-label-sm">C.U.R.P.</label>
-                            <input type="text" class="form-control form-control-sm" id="curp">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <label for="tel" class="form-label col-form-label col-form-label-sm">Teléfono</label>
-                            <input type="text" class="form-control form-control-sm" id="tel">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <label for="email" class="form-label col-form-label col-form-label-sm">Correo Electrónico</label>
-                            <input type="text" class="form-control form-control-sm" id="email">
-                        </div>
-                    </div>
-                </div>
+        <!-- THE PANELS -->
+        <article id="panels">
+            <div class="container_tab">
+                <form action="" class="design__form">
+                    <section id="panel-1">
+                        <main>
+                            <div class="row mt-4">
+                                <div class="col-md-2 col-sm-12">
+                                    <p>Datos Personales</p>
+                                </div>
+                                <div class="col-md-10 col-sm-12">
+                                    <div class="row mb-2">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="aPate" class="form-label col-form-label col-form-label-sm">Apellido Paterno</label>
+                                            <input type="text" class="form-control form-control-sm" id="aPate">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="aMate" class="form-label col-form-label col-form-label-sm">Apellido Materno</label>
+                                            <input type="text" class="form-control form-control-sm" id="aMate">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="nombre" class="form-label col-form-label col-form-label-sm">Nombre(s)</label>
+                                            <input type="text" class="form-control form-control-sm" id="nombre">
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="rfc" class="form-label col-form-label col-form-label-sm">R.F.C.</label>
+                                            <input type="text" class="form-control form-control-sm" id="rfc">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="curp" class="form-label col-form-label col-form-label-sm">C.U.R.P.</label>
+                                            <input type="text" class="form-control form-control-sm" id="curp">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="tel" class="form-label col-form-label col-form-label-sm">Teléfono</label>
+                                            <input type="text" class="form-control form-control-sm" id="tel">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="email" class="form-label col-form-label col-form-label-sm">Correo Electrónico</label>
+                                            <input type="text" class="form-control form-control-sm" id="email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-12">
+                                    <p>Direccion</p>
+                                </div>
+                                <div class="col-md-10 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="calle" class="form-label col-form-label col-form-label-sm">Calle</label>
+                                            <input type="text" class="form-control form-control-sm" id="calle">
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <label for="nExt" class="form-label col-form-label col-form-label-sm">No. Exterior</label>
+                                            <input type="text" class="form-control form-control-sm" id="nExt">
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <label for="nInt" class="form-label col-form-label col-form-label-sm">No. Interior</label>
+                                            <input type="text" class="form-control form-control-sm" id="nInt">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="cp" class="form-label col-form-label col-form-label-sm">Código Postal</label>
+                                            <input type="text" class="form-control form-control-sm" id="cp">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="colonia" class="form-label col-form-label col-form-label-sm">Colonia</label>
+                                            <select name="" id="colonia" class="form-select form-select-sm">
+                                                <option value="">Selecciona una Opción</option>
+                                                <option value="">Colonia 1</option>
+                                                <option value="">Colonia 2</option>
+                                                <option value="">Colonia 3</option>
+                                            </select>
+                                        </div>
+                                        
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="cPob" class="form-label col-form-label col-form-label-sm">Ciudad / Poblacion</label>
+                                            <input type="text" class="form-control form-control-sm" id="cPob">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-md-2 col-sm-12">
+                                    <p>Datos del Asegurado</p>
+                                </div>
+                                <div class="col-md-10 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="cHab" class="form-label col-form-label col-form-label-sm">Conductor Habitual</label>
+                                            <input type="text" class="form-control form-control-sm" id="cHab">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <label for="iFinanc" class="form-label col-form-label col-form-label-sm">Institucion / Filial</label>
+                                            <select name="" id="iFinanc" class="form-select form-select-sm">
+                                                <option value="">Selecciona una Opción</option>
+                                                <option value="">iFinanc 1</option>
+                                                <option value="">iFinanc 2</option>
+                                                <option value="">iFinanc 3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <label for="cServ" class="form-label col-form-label col-form-label-sm">Userkey</label>
+                                            <input type="text" class="form-control form-control-sm" id="cServ">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12">
+                                            <label for="placa" class="form-label col-form-label col-form-label-sm">Placa</label>
+                                            <input type="text" class="form-control form-control-sm" id="placa">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <label for="nMotor" class="form-label col-form-label col-form-label-sm">Numero de Motor</label>
+                                            <input type="text" class="form-control form-control-sm" id="nMotor">
+                                        </div>
+                                        <div class="col-md-5 col-sm-12">
+                                            <label for="cCoche" class="form-label col-form-label col-form-label-sm">Color de Coche</label>
+                                                <select name="" id="cCoche" class="form-select form-select-sm">
+                                                    <option value="">Selecciona una Opción</option>
+                                                    <option value="">iFinanc 1</option>
+                                                    <option value="">iFinanc 2</option>
+                                                    <option value="">iFinanc 3</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12">
+                                            <label for="fPago" class="form-label col-form-label col-form-label-sm">Forma de Pago</label>
+                                            <input type="text" class="form-control form-control-sm" id="fPago">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </main>
+                    </section>
+                    <section id="panel-2">
+                        <main>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <label for="ocup" class="form-label col-form-label col-form-label-sm">Ocupación</label>
+                                        <select name="" id="ocup" class="form-select form-select-sm">
+                                            <option value="">Selecciona una Opción</option>
+                                            <option value="Empleado">Empleado</option>
+                                            <option value="Comerciante">Comerciante</option>
+                                            <option value="Empresario">Empresario</option>
+                                            <option value="Permisionario">Permisionario</option>
+                                            <option value="Transportista">Transportista</option>
+                                            <option value="Hogar">Hogar</option>
+                                            <option value="Otro">Otro</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <label for="pOrig" class="form-label col-form-label col-form-label-sm">País de Origen</label>
+                                        <select name="" id="pOrig" class="form-select form-select-sm">
+                                            <option value="">Selecciona una Opción</option>
+                                            <option value="mexico">México</option>
+                                            <option value="extranjero">Extranjero</option>
+                                        </select>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <label for="cServ" class="form-label col-form-label col-form-label-sm">Profesión</label>
+                                        <select name="" id="cServ" class="form-select form-select-sm">
+                                            <option value="">Selecciona una Opción</option>
+                                            <option value="Administrador">Administrador</option>
+                                            <option value="Abogado">Abogado</option>
+                                            <option value="Arquitecto">Arquitecto</option>
+                                            <option value="Actuario">Actuario</option>
+                                            <option value="Contador">Contador</option>
+                                            <option value="Docente">Docente</option>
+                                            <option value="Economista">Economista</option>
+                                            <option value="Ingeniero">Ingeniero</option>
+                                            <option value="Medico">Medico</option>
+                                            <option value="Psicologo">Psicologo</option>
+                                            <option value="Odontologo">Odontologo</option>
+                                            <option value="Químico">Químico</option>
+                                            <option value="Biologo">Biologo</option>
+                                            <option value="Sociologo">Sociologo</option>
+                                            <option value="Periodista">Periodista</option>
+                                            <option value="Otro">Otro</option>
+                                            <option value="Ninguna">Ninguna</option>
+                                        </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12">
+                                    <label for="rFiscal" class="form-label col-form-label col-form-label-sm">Régimen Fiscal</label>
+                                    <input type="text" class="form-control form-control-sm" id="rFiscal">
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <label for="nMotor" class="form-label col-form-label col-form-label-sm">Número Cert. FIEL</label>
+                                    <input type="text" class="form-control form-control-sm" id="nMotor">
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <label for="pOrig" class="form-label col-form-label col-form-label-sm">Tipo de Identificación</label>
+                                    <select name="" id="pOrig" class="form-select form-select-sm">
+                                        <option value="">Selecciona una Opción</option>
+                                        <option value="IFE">IFE</option>
+                                        <option value="PASAPORTE">PASAPORTE</option>
+                                        <option value="CEDULA PROFESIONAL">CEDULA PROFESIONAL</option>
+                                        <option value="CARTILLA DE SERVICIO MILITAR">CARTILLA DE SERVICIO MILITAR</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 col-sm-12">
+                                    <label for="pOrig" class="form-label col-form-label col-form-label-sm">Lugar de Nacimiento</label>
+                                    <select name="" id="pOrig" class="form-select form-select-sm">
+                                        <option value="">Selecciona una Opción</option>
+                                        <option value=""></option>
+                                        <option value="AGUASCALIENTES">AGUASCALIENTES</option>
+                                        <option value="BAJA CALIFORNIA">BAJA CALIFORNIA</option>
+                                        <option value="BAJA CALIFORNIA SUR">BAJA CALIFORNIA SUR</option>
+                                        <option value="CAMPECHE">CAMPECHE</option>
+                                        <option value="COAHUILA">COAHUILA</option>
+                                        <option value="COLIMA">COLIMA</option>
+                                        <option value="CHIAPAS">CHIAPAS</option>
+                                        <option value="CHIHUAHUA">CHIHUAHUA</option>
+                                        <option value="DISTRITO FEDERAL">DISTRITO FEDERAL</option>
+                                        <option value="DURANGO">DURANGO</option>
+                                        <option value="GUANAJUATO">GUANAJUATO</option>
+                                        <option value="GUERRERO">GUERRERO</option>
+                                        <option value="HIDALGO">HIDALGO</option>
+                                        <option value="JALISCO">JALISCO</option>
+                                        <option value="MEXICO">MEXICO</option>
+                                        <option value="MICHOACAN">MICHOACAN</option>
+                                        <option value="MORELOS">MORELOS</option>
+                                        <option value="NAYARIT">NAYARIT</option>
+                                        <option value="NUEVO LEON">NUEVO LEON</option>
+                                        <option value="OAXACA">OAXACA</option>
+                                        <option value="PUEBLA">PUEBLA</option>
+                                        <option value="QUERETARO">QUERETARO</option>
+                                        <option value="QUINTANA ROO">QUINTANA ROO</option>
+                                        <option value="SAN LUIS POTOSI">SAN LUIS POTOSI</option>
+                                        <option value="SINALOA">SINALOA</option>
+                                        <option value="SONORA">SONORA</option>
+                                        <option value="TABASCO">TABASCO</option>
+                                        <option value="TAMAULIPAS">TAMAULIPAS</option>
+                                        <option value="TLAXCALA">TLAXCALA</option>
+                                        <option value="VERACRUZ">VERACRUZ</option>
+                                        <option value="YUCATAN">YUCATAN</option>
+                                        <option value="ZACATECAS">ZACATECAS</option>
+                                        <option value="NACIDO EN EL EXTRANJERO">NACIDO EN EL EXTRANJERO</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <label for="rFiscal" class="form-label col-form-label col-form-label-sm">Segundo Correo</label>
+                                    <input type="text" class="form-control form-control-sm" id="rFiscal">
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <label for="nMotor" class="form-label col-form-label col-form-label-sm">Otros Teléfonos</label>
+                                    <input type="text" class="form-control form-control-sm" id="nMotor">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 col-sm-12">
+                                    <label for="gNegocio" class="form-label col-form-label col-form-label-sm">Giro del Negocio</label>
+                                    <select name="" id="gNegocio" class="form-select form-select-sm">
+                                        <option value="">Selecciona una Opcion</option>
+                                        <option value=""></option>
+                                        <option value="Industrial">Industrial</option>
+                                        <option value="Comercial">Comercial</option>
+                                        <option value="Servicios">Servicios</option>
+                                        <option value="Serv. Publicos">Serv. Publicos</option>
+                                        <option value="Serv. Privados">Serv. Privados</option>
+                                        <option value="Transporte">Transporte</option>
+                                        <option value="Turismo">Turismo</option>
+                                        <option value="Instituciones Financieras">Instituciones Financieras</option>
+                                        <option value="Educacion">Educacion</option>
+                                        <option value="Salubridad">Salubridad</option>
+                                        <option value="Fianzas y Seguros">Fianzas y Seguros</option>
+                                        <!-- <option value="MEXICANA">MEXICANA</option>
+                                        <option value="EXTRANJERO">EXTRANJERO</option> -->
+                                    </select>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <label for="fMercantil" class="form-label col-form-label col-form-label-sm">Folio Mercantil</label>
+                                    <input type="text" class="form-control form-control-sm" id="fMercantil">
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <label for="nacionalidad" class="form-label col-form-label col-form-label-sm">Nacionalidad</label>
+                                    <select name="" id="nacionalidad" class="form-select form-select-sm">
+                                    <option value="">Selecciona una Opcion</option>
+                                    <option value="MEXICANA">MEXICANA</option>
+                                    <option value="EXTRANJERO">EXTRANJERO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-12">
+                                    <label for="fPago" class="form-label col-form-label col-form-label-sm">Fecha de Nacimiento</label>
+                                    <div class="row">
+                                    <label for="year" class="form-label col-form-label col-form-label-sm col-sm-1">Año</label>
+                                    <div class="col-md-3">
+                                        <select name="" id="year" class="form-select form-select-sm">
+                                        <option value="">Selecciona una Opción</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                        <option value="1999">1999</option>
+                                        <option value="1998">1998</option>
+                                        <option value="1997">1997</option>
+                                        <option value="1996">1996</option>
+                                        <option value="1995">1995</option>
+                                        <option value="1994">1994</option>
+                                        <option value="1993">1993</option>
+                                        <option value="1992">1992</option>
+                                        <option value="1991">1991</option>
+                                        <option value="1990">1990</option>
+                                        <option value="1989">1989</option>
+                                        <option value="1988">1988</option>
+                                        <option value="1987">1987</option>
+                                        <option value="1986">1986</option>
+                                        <option value="1985">1985</option>
+                                        <option value="1984">1984</option>
+                                        <option value="1983">1983</option>
+                                        <option value="1982">1982</option>
+                                        <option value="1981">1981</option>
+                                        <option value="1980">1980</option>
+                                        <option value="1979">1979</option>
+                                        <option value="1978">1978</option>
+                                        <option value="1977">1977</option>
+                                        <option value="1976">1976</option>
+                                        <option value="1975">1975</option>
+                                        <option value="1974">1974</option>
+                                        <option value="1973">1973</option>
+                                        <option value="1972">1972</option>
+                                        <option value="1971">1971</option>
+                                        <option value="1970">1970</option>
+                                        <option value="1969">1969</option>
+                                        <option value="1968">1968</option>
+                                        <option value="1967">1967</option>
+                                        <option value="1966">1966</option>
+                                        <option value="1965">1965</option>
+                                        <option value="1964">1964</option>
+                                        <option value="1963">1963</option>
+                                        <option value="1962">1962</option>
+                                        <option value="1961">1961</option>
+                                        <option value="1960">1960</option>
+                                        <option value="1959">1959</option>
+                                        <option value="1958">1958</option>
+                                        <option value="1957">1957</option>
+                                        <option value="1956">1956</option>
+                                        <option value="1955">1955</option>
+                                        <option value="1954">1954</option>
+                                        <option value="1953">1953</option>
+                                        <option value="1952">1952</option>
+                                        <option value="1951">1951</option>
+                                        <option value="1950">1950</option>
+                                        <option value="1949">1949</option>
+                                        <option value="1948">1948</option>
+                                        <option value="1947">1947</option>
+                                        <option value="1946">1946</option>
+                                        <option value="1945">1945</option>
+                                        <option value="1944">1944</option>
+                                        <option value="1943">1943</option>
+                                        <option value="1942">1942</option>
+                                        <option value="1941">1941</option>
+                                        <option value="1940">1940</option>
+                                        <option value="1939">1939</option>
+                                        <option value="1938">1938</option>
+                                        <option value="1937">1937</option>
+                                        <option value="1936">1936</option>
+                                        <option value="1935">1935</option>
+                                        <option value="1934">1934</option>
+                                        <option value="1933">1933</option>
+                                        <option value="1932">1932</option>
+                                        <option value="1931">1931</option>
+                                        <option value="1930">1930</option>
+                                        <option value="1929">1929</option>
+                                        <option value="1928">1928</option>
+                                        <option value="1927">1927</option>
+                                        </select>
+                                    </div>
+                                    <label for="month" class="form-label col-form-label col-form-label-sm col-sm-1">Mes</label>
+                                    <div class="col-md-3">
+                                        <select name="" id="month" class="form-select form-select-sm">
+                                        <option value="">Selecciona una Opción</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        </select>
+                                    </div>
+                                    <label for="day" class="form-label col-form-label col-form-label-sm col-sm-1">Día</label>
+                                    <div class="col-md-3">
+                                        <select name="" id="day" class="form-select form-select-sm">
+                                        <option value="">Selecciona una Opción</option>
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        </select>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12">
+                                    <label for="activ" class="form-label col-form-label col-form-label-sm">Actividad</label>
+                                    <input type="text" class="form-control form-control-sm" id="activ">
+                                </div>
+                            </div>
+                        </main>
+                    </section>
+                </form>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-2 col-sm-12">
-                    <p>Direccion</p>
-                </div>
-                <div class="col-md-10 col-sm-12">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <label for="calle" class="form-label col-form-label col-form-label-sm">Calle</label>
-                            <input type="text" class="form-control form-control-sm" id="calle">
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <label for="nExt" class="form-label col-form-label col-form-label-sm">No. Exterior</label>
-                            <input type="text" class="form-control form-control-sm" id="nExt">
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <label for="nInt" class="form-label col-form-label col-form-label-sm">No. Interior</label>
-                            <input type="text" class="form-control form-control-sm" id="nInt">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <label for="cp" class="form-label col-form-label col-form-label-sm">Código Postal</label>
-                            <input type="text" class="form-control form-control-sm" id="cp">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <label for="colonia" class="form-label col-form-label col-form-label-sm">Colonia</label>
-                            <select name="" id="colonia" class="form-select form-select-sm">
-                                <option value="">Selecciona una Opción</option>
-                                <option value="">Colonia 1</option>
-                                <option value="">Colonia 2</option>
-                                <option value="">Colonia 3</option>
-                            </select>
-                        </div>
-                       
-                        <div class="col-md-4 col-sm-12">
-                            <label for="cPob" class="form-label col-form-label col-form-label-sm">Ciudad / Poblacion</label>
-                            <input type="text" class="form-control form-control-sm" id="cPob">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-md-2 col-sm-12">
-                    <p>Datos del Asegurado</p>
-                </div>
-                <div class="col-md-10 col-sm-12">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <label for="cHab" class="form-label col-form-label col-form-label-sm">Conductor Habitual</label>
-                            <input type="text" class="form-control form-control-sm" id="cHab">
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <label for="iFinanc" class="form-label col-form-label col-form-label-sm">Institucion / Filial</label>
-                            <select name="" id="iFinanc" class="form-select form-select-sm">
-                                <option value="">Selecciona una Opción</option>
-                                <option value="">iFinanc 1</option>
-                                <option value="">iFinanc 2</option>
-                                <option value="">iFinanc 3</option>
-                            </select>
-                        </div>
-                        <div class="col-md-2 col-sm-12">
-                            <label for="cServ" class="form-label col-form-label col-form-label-sm">Userkey</label>
-                            <input type="text" class="form-control form-control-sm" id="cServ">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <label for="placa" class="form-label col-form-label col-form-label-sm">Placa</label>
-                            <input type="text" class="form-control form-control-sm" id="placa">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <label for="nMotor" class="form-label col-form-label col-form-label-sm">Numero de Motor</label>
-                            <input type="text" class="form-control form-control-sm" id="nMotor">
-                        </div>
-                        <div class="col-md-5 col-sm-12">
-                            <label for="cCoche" class="form-label col-form-label col-form-label-sm">Color de Coche</label>
-                                <select name="" id="cCoche" class="form-select form-select-sm">
-                                    <option value="">Selecciona una Opción</option>
-                                    <option value="">iFinanc 1</option>
-                                    <option value="">iFinanc 2</option>
-                                    <option value="">iFinanc 3</option>
-                                </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <label for="fPago" class="form-label col-form-label col-form-label-sm">Forma de Pago</label>
-                            <input type="text" class="form-control form-control-sm" id="fPago">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr>
-            </div>
-          </form>
-            </main>
-        </section>
-        <section id="panel-2">
-            <main>
-                <h2>Modificar Datos</h2>
-            <form action="" class="design__form">
-            <div class="row">
-              <div class="col-md-4 col-sm-12">
-                  <label for="ocup" class="form-label col-form-label col-form-label-sm">Ocupación</label>
-                      <select name="" id="ocup" class="form-select form-select-sm">
-                          <option value="">Selecciona una Opción</option>
-                          <option value="Empleado">Empleado</option>
-                          <option value="Comerciante">Comerciante</option>
-                          <option value="Empresario">Empresario</option>
-                          <option value="Permisionario">Permisionario</option>
-                          <option value="Transportista">Transportista</option>
-                          <option value="Hogar">Hogar</option>
-                          <option value="Otro">Otro</option>
-                      </select>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                  <label for="pOrig" class="form-label col-form-label col-form-label-sm">País de Origen</label>
-                      <select name="" id="pOrig" class="form-select form-select-sm">
-                          <option value="">Selecciona una Opción</option>
-                          <option value="mexico">México</option>
-                          <option value="extranjero">Extranjero</option>
-                      </select>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                  <label for="cServ" class="form-label col-form-label col-form-label-sm">Profesión</label>
-                      <select name="" id="cServ" class="form-select form-select-sm">
-                          <option value="">Selecciona una Opción</option>
-                          <option value="Administrador">Administrador</option>
-                          <option value="Abogado">Abogado</option>
-                          <option value="Arquitecto">Arquitecto</option>
-                          <option value="Actuario">Actuario</option>
-                          <option value="Contador">Contador</option>
-                          <option value="Docente">Docente</option>
-                          <option value="Economista">Economista</option>
-                          <option value="Ingeniero">Ingeniero</option>
-                          <option value="Medico">Medico</option>
-                          <option value="Psicologo">Psicologo</option>
-                          <option value="Odontologo">Odontologo</option>
-                          <option value="Químico">Químico</option>
-                          <option value="Biologo">Biologo</option>
-                          <option value="Sociologo">Sociologo</option>
-                          <option value="Periodista">Periodista</option>
-                          <option value="Otro">Otro</option>
-                          <option value="Ninguna">Ninguna</option>
-                      </select>
-              </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-12">
-                    <label for="rFiscal" class="form-label col-form-label col-form-label-sm">Régimen Fiscal</label>
-                    <input type="text" class="form-control form-control-sm" id="rFiscal">
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <label for="nMotor" class="form-label col-form-label col-form-label-sm">Número Cert. FIEL</label>
-                    <input type="text" class="form-control form-control-sm" id="nMotor">
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <label for="pOrig" class="form-label col-form-label col-form-label-sm">Tipo de Identificación</label>
-                    <select name="" id="pOrig" class="form-select form-select-sm">
-                        <option value="">Selecciona una Opción</option>
-                        <option value="IFE">IFE</option>
-                        <option value="PASAPORTE">PASAPORTE</option>
-                        <option value="CEDULA PROFESIONAL">CEDULA PROFESIONAL</option>
-                        <option value="CARTILLA DE SERVICIO MILITAR">CARTILLA DE SERVICIO MILITAR</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5 col-sm-12">
-                    <label for="pOrig" class="form-label col-form-label col-form-label-sm">Lugar de Nacimiento</label>
-                    <select name="" id="pOrig" class="form-select form-select-sm">
-                        <option value="">Selecciona una Opción</option>
-                        <option value=""></option>
-                        <option value="AGUASCALIENTES">AGUASCALIENTES</option>
-                        <option value="BAJA CALIFORNIA">BAJA CALIFORNIA</option>
-                        <option value="BAJA CALIFORNIA SUR">BAJA CALIFORNIA SUR</option>
-                        <option value="CAMPECHE">CAMPECHE</option>
-                        <option value="COAHUILA">COAHUILA</option>
-                        <option value="COLIMA">COLIMA</option>
-                        <option value="CHIAPAS">CHIAPAS</option>
-                        <option value="CHIHUAHUA">CHIHUAHUA</option>
-                        <option value="DISTRITO FEDERAL">DISTRITO FEDERAL</option>
-                        <option value="DURANGO">DURANGO</option>
-                        <option value="GUANAJUATO">GUANAJUATO</option>
-                        <option value="GUERRERO">GUERRERO</option>
-                        <option value="HIDALGO">HIDALGO</option>
-                        <option value="JALISCO">JALISCO</option>
-                        <option value="MEXICO">MEXICO</option>
-                        <option value="MICHOACAN">MICHOACAN</option>
-                        <option value="MORELOS">MORELOS</option>
-                        <option value="NAYARIT">NAYARIT</option>
-                        <option value="NUEVO LEON">NUEVO LEON</option>
-                        <option value="OAXACA">OAXACA</option>
-                        <option value="PUEBLA">PUEBLA</option>
-                        <option value="QUERETARO">QUERETARO</option>
-                        <option value="QUINTANA ROO">QUINTANA ROO</option>
-                        <option value="SAN LUIS POTOSI">SAN LUIS POTOSI</option>
-                        <option value="SINALOA">SINALOA</option>
-                        <option value="SONORA">SONORA</option>
-                        <option value="TABASCO">TABASCO</option>
-                        <option value="TAMAULIPAS">TAMAULIPAS</option>
-                        <option value="TLAXCALA">TLAXCALA</option>
-                        <option value="VERACRUZ">VERACRUZ</option>
-                        <option value="YUCATAN">YUCATAN</option>
-                        <option value="ZACATECAS">ZACATECAS</option>
-                        <option value="NACIDO EN EL EXTRANJERO">NACIDO EN EL EXTRANJERO</option>
-                    </select>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <label for="rFiscal" class="form-label col-form-label col-form-label-sm">Segundo Correo</label>
-                    <input type="text" class="form-control form-control-sm" id="rFiscal">
-                </div>
-                <div class="col-md-3 col-sm-12">
-                    <label for="nMotor" class="form-label col-form-label col-form-label-sm">Otros Teléfonos</label>
-                    <input type="text" class="form-control form-control-sm" id="nMotor">
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-md-5 col-sm-12">
-                  <label for="gNegocio" class="form-label col-form-label col-form-label-sm">Giro del Negocio</label>
-                  <select name="" id="gNegocio" class="form-select form-select-sm">
-                    <option value="">Selecciona una Opcion</option>
-                    <option value=""></option>
-                    <option value="Industrial">Industrial</option>
-                    <option value="Comercial">Comercial</option>
-                    <option value="Servicios">Servicios</option>
-                    <option value="Serv. Publicos">Serv. Publicos</option>
-                    <option value="Serv. Privados">Serv. Privados</option>
-                    <option value="Transporte">Transporte</option>
-                    <option value="Turismo">Turismo</option>
-                    <option value="Instituciones Financieras">Instituciones Financieras</option>
-                    <option value="Educacion">Educacion</option>
-                    <option value="Salubridad">Salubridad</option>
-                    <option value="Fianzas y Seguros">Fianzas y Seguros</option>
-                    <!-- <option value="MEXICANA">MEXICANA</option>
-                    <option value="EXTRANJERO">EXTRANJERO</option> -->
-                  </select>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                  <label for="fMercantil" class="form-label col-form-label col-form-label-sm">Folio Mercantil</label>
-                  <input type="text" class="form-control form-control-sm" id="fMercantil">
-              </div>
-              <div class="col-md-3 col-sm-12">
-                <label for="nacionalidad" class="form-label col-form-label col-form-label-sm">Nacionalidad</label>
-                <select name="" id="nacionalidad" class="form-select form-select-sm">
-                  <option value="">Selecciona una Opcion</option>
-                  <option value="MEXICANA">MEXICANA</option>
-                  <option value="EXTRANJERO">EXTRANJERO</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-sm-12">
-                <label for="fPago" class="form-label col-form-label col-form-label-sm">Fecha de Nacimiento</label>
-                <div class="row">
-                  <label for="year" class="form-label col-form-label col-form-label-sm col-sm-1">Año</label>
-                  <div class="col-md-3">
-                    <select name="" id="year" class="form-select form-select-sm">
-                      <option value="">Selecciona una Opción</option>
-                      <option value="2005">2005</option>
-                      <option value="2004">2004</option>
-                      <option value="2003">2003</option>
-                      <option value="2002">2002</option>
-                      <option value="2001">2001</option>
-                      <option value="2000">2000</option>
-                      <option value="1999">1999</option>
-                      <option value="1998">1998</option>
-                      <option value="1997">1997</option>
-                      <option value="1996">1996</option>
-                      <option value="1995">1995</option>
-                      <option value="1994">1994</option>
-                      <option value="1993">1993</option>
-                      <option value="1992">1992</option>
-                      <option value="1991">1991</option>
-                      <option value="1990">1990</option>
-                      <option value="1989">1989</option>
-                      <option value="1988">1988</option>
-                      <option value="1987">1987</option>
-                      <option value="1986">1986</option>
-                      <option value="1985">1985</option>
-                      <option value="1984">1984</option>
-                      <option value="1983">1983</option>
-                      <option value="1982">1982</option>
-                      <option value="1981">1981</option>
-                      <option value="1980">1980</option>
-                      <option value="1979">1979</option>
-                      <option value="1978">1978</option>
-                      <option value="1977">1977</option>
-                      <option value="1976">1976</option>
-                      <option value="1975">1975</option>
-                      <option value="1974">1974</option>
-                      <option value="1973">1973</option>
-                      <option value="1972">1972</option>
-                      <option value="1971">1971</option>
-                      <option value="1970">1970</option>
-                      <option value="1969">1969</option>
-                      <option value="1968">1968</option>
-                      <option value="1967">1967</option>
-                      <option value="1966">1966</option>
-                      <option value="1965">1965</option>
-                      <option value="1964">1964</option>
-                      <option value="1963">1963</option>
-                      <option value="1962">1962</option>
-                      <option value="1961">1961</option>
-                      <option value="1960">1960</option>
-                      <option value="1959">1959</option>
-                      <option value="1958">1958</option>
-                      <option value="1957">1957</option>
-                      <option value="1956">1956</option>
-                      <option value="1955">1955</option>
-                      <option value="1954">1954</option>
-                      <option value="1953">1953</option>
-                      <option value="1952">1952</option>
-                      <option value="1951">1951</option>
-                      <option value="1950">1950</option>
-                      <option value="1949">1949</option>
-                      <option value="1948">1948</option>
-                      <option value="1947">1947</option>
-                      <option value="1946">1946</option>
-                      <option value="1945">1945</option>
-                      <option value="1944">1944</option>
-                      <option value="1943">1943</option>
-                      <option value="1942">1942</option>
-                      <option value="1941">1941</option>
-                      <option value="1940">1940</option>
-                      <option value="1939">1939</option>
-                      <option value="1938">1938</option>
-                      <option value="1937">1937</option>
-                      <option value="1936">1936</option>
-                      <option value="1935">1935</option>
-                      <option value="1934">1934</option>
-                      <option value="1933">1933</option>
-                      <option value="1932">1932</option>
-                      <option value="1931">1931</option>
-                      <option value="1930">1930</option>
-                      <option value="1929">1929</option>
-                      <option value="1928">1928</option>
-                      <option value="1927">1927</option>
-                    </select>
-                  </div>
-                  <label for="month" class="form-label col-form-label col-form-label-sm col-sm-1">Mes</label>
-                  <div class="col-md-3">
-                    <select name="" id="month" class="form-select form-select-sm">
-                      <option value="">Selecciona una Opción</option>
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                    </select>
-                  </div>
-                  <label for="day" class="form-label col-form-label col-form-label-sm col-sm-1">Día</label>
-                  <div class="col-md-3">
-                    <select name="" id="day" class="form-select form-select-sm">
-                      <option value="">Selecciona una Opción</option>
-                      <option value="01">01</option>
-                      <option value="02">02</option>
-                      <option value="03">03</option>
-                      <option value="04">04</option>
-                      <option value="05">05</option>
-                      <option value="06">06</option>
-                      <option value="07">07</option>
-                      <option value="08">08</option>
-                      <option value="09">09</option>
-                      <option value="10">10</option>
-                      <option value="11">11</option>
-                      <option value="12">12</option>
-                      <option value="13">13</option>
-                      <option value="14">14</option>
-                      <option value="15">15</option>
-                      <option value="16">16</option>
-                      <option value="17">17</option>
-                      <option value="18">18</option>
-                      <option value="19">19</option>
-                      <option value="20">20</option>
-                      <option value="21">21</option>
-                      <option value="22">22</option>
-                      <option value="23">23</option>
-                      <option value="24">24</option>
-                      <option value="25">25</option>
-                      <option value="26">26</option>
-                      <option value="27">27</option>
-                      <option value="28">28</option>
-                      <option value="29">29</option>
-                      <option value="30">30</option>
-                      <option value="31">31</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-12">
-                <label for="activ" class="form-label col-form-label col-form-label-sm">Actividad</label>
-                <input type="text" class="form-control form-control-sm" id="activ">
-              </div>
-            </div>
-          </form>
-            </main>
-        </section>
+        </article>    
     </div>
-</article>
 </body>
 </html>

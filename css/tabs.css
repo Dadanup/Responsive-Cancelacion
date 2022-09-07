@@ -25,7 +25,8 @@ label.panel-label:hover {
 }
 
 #panels {
-  background-color: transparent;
+  background-color: white;
+  border-radius: 15px;
 }
 #panels .container_tab {
   margin: 0 auto;
