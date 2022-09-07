@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    
+  <div class="sidebar">
+    <div class="logo-details">
+        <img class='icon' src="/assets/images/qualitasname.png" alt="" width="130px">
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav_list">
+        <li>
+            <a href="#">
+              <i class='bx bx-grid-alt'></i>
+              <span class="links_name">Pagina Principal</span>
+            </a>
+             <span class="tooltip_menu">Pagina Principal</span>
+          </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Nueva Cotizacion</span>
+        </a>
+         <span class="tooltip_menu">Nueva Cotizacion</span>
+      </li>
+      <li>
+       <a href="#">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Consulta de Polizas</span>
+       </a>
+       <span class="tooltip_menu">Consulta de Polizas</span>
+     </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">REPUVE</span>
+       </a>
+       <span class="tooltip_menu">REPUVE</span>
+     </li>
+     <!-- <li>
+        preguntas frecuentes se mueve a footer
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">pREGUNTAS fRECUENTES</span>
+       </a>
+       <span class="tooltip_menu">pREGUNTAS fRECUENTES</span>
+     </li> -->
+     <!-- <li>
+        Condiciones Generales Autos y Pick-ups de uso personal se mueve a footer
+       <a href="#">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Condiciones Generales Autos
+            y Pick-ups de uso personal</span>
+       </a>
+       <span class="tooltip_menu">Condiciones Generales Autos
+        y Pick-ups de uso personals</span>
+     </li> -->
+     <!-- <li>
+       <a href="#">
+        Aviso de privacidad se mueve a footer
+         <i class='bx bx-cart-alt' ></i>
+         <span class="links_name">Aviso de privacidad</span>
+       </a>
+       <span class="tooltip_menu">Aviso de privacidad</span>
+     </li> -->
+     
+     <li class="profile">
+         <div class="profile-details">
+           <!--<img src="profile.jpg" alt="profileImg">-->
+           <div class="name_job">
+             <div class="name">Daniel Bautista</div>
+             <div class="job">Ejecutivo Sistemas OPL</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+    <section class="home-section">
+        <!-- <div class="text">Dashboard</div> -->
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-sm container-md container-lg container-xl container-xxl">
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/images/qualitasq-colour.png" alt="" width="35" >
+                  </a>
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">QAdmin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Renovacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Consultas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Operaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Cancelacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Modificacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Folios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Empleados</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
+        <div class="container">
+            <h2>Cancelar Póliza</h2>
+            <form action="" class="design__form">
+                <hr>
+                <div class="row mb-2">
+                    <div class="col-md-12">
+                        <div class="row mb-2">
+                            <label for="uCancel" class="col-md-4 col-form-label col-form-label-sm">Usuario que Emite la Cancelación</label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control form-control-sm" id="uCancel" value="Bautista Banda Jesús Daniel" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <label for="uAseg" class="col-md-4 col-form-label col-form-label-sm">Usuario Asegurado </label>
+                            <div class="col-md-8">
+                                <input type="text" class="form-control form-control-sm" id="uAseg" value="Banda Bautista Daniel Jesús" disabled readonly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row mb-1 mt-2">
+                            <h5>Datos de la Póliza</h5>
+                          </div>
+                        <div class="row  mb-1">
+                            <label for="pVenta" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Punto de Venta</label>
+                            <div class="col-sm-10 col-md-4">
+                            <input type="text" class="form-control form-control-sm" id="pVenta" value="QUALITAS" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="poliza" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Póliza</label>
+                            <div class="col-sm-10 col-md-4">
+                            <input type="text" class="form-control form-control-sm" id="poliza" value="1234567890" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="nombre" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Nombre</label>
+                            <div class="col-sm-10 col-md-8">
+                            <input type="text" class="form-control form-control-sm" id="nombre" value="Bautista Banda Jesus Daniel" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="nombre" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">No. de Empleado</label>
+                            <div class="col-sm-10 col-md-8">
+                            <input type="text" class="form-control form-control-sm" id="nombre" value="1234567890" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row mb-1 mt-4">
+                            <h5>Datos del Automóvil</h5>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="marca" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Marca</label>
+                            <div class="col-sm-10 col-md-4">
+                            <input type="text" class="form-control form-control-sm" id="marca" value="BMW" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="modelo" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Modelo</label>
+                            <div class="col-sm-10 col-md-4">
+                            <input type="text" class="form-control form-control-sm" id="modelo" value="2022" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="descrip" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Descripción</label>
+                            <div class="col-sm-10 col-md-8">
+                            <input type="text" class="form-control form-control-sm" id="descrip" value="BORA SPORT TIPTRONIC AUT., 05 OCUP." disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="serie" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">No. de Serie</label>
+                            <div class="col-sm-10 col-md-4">
+                            <input type="text" class="form-control form-control-sm" id="serie" value="1234567890" disabled readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row mb-1 mt-2">
+                            <h5>Solicitud de Cancelación</h5>
+                          </div>
+                        <div class="row  mb-1">
+                            <label for="pVenta" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Inicio Vigencia</label>
+                            <div class="col-sm-10 col-md-4">
+                            <input type="date" class="form-control form-control-sm" id="pVenta" value="2012-03-01" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="poliza" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Fin Vigencia</label>
+                            <div class="col-sm-10 col-md-4">
+                            <input type="date" class="form-control form-control-sm" id="poliza" value="2012-03-01" disabled readonly>
+                            </div>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="nombre" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Fecha Cancelación</label>
+                            <div class="col-sm-10 col-md-4">
+                            <input type="date" class="form-control form-control-sm" id="nombre">
+                            </div>
+                        </div>
+                        <div class="row  mb-1">
+                            <label for="motivo" class="col-sm-4 col-md-4 col-form-label col-form-label-sm">Motivo</label>
+                            <div class="col-sm-10 col-md-8">
+                            <select name="" id="motivo" class="form-select form-control-sm">
+                                <option value="">Selecciona una Opción</option>
+                                <option value="Por Venta de Unidad">Por Venta de Unidad</option>
+                                <option value="Dejo de Laborar">Dejo de Laborar</option>
+                                <option value="Error de Emision">Error de Emision</option>
+                                <option value="Por Falta de Pago">Por Falta de Pago</option>
+                                <option value="Por Perdida Total">Por Perdida Total</option>
+                                <option value="Sustitucion de Poliza">Sustitucion de Poliza</option>
+                                <option value="A solicitud">A solicitud</option>
+                                <option value="Falta de capacidad de credito">Falta de capacidad de credito</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+  
+    </section>
+  <script src="/js/main.js"></script>
+</body>
+</html>

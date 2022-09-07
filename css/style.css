@@ -240,6 +240,8 @@
   width: calc(100% - 78px);
   transition: all 0.5s ease;
   z-index: 2;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 .sidebar.open ~ .home-section{
   left: 250px;
@@ -250,7 +252,7 @@
   color: #11101d;
   font-size: 25px;
   font-weight: 500;
-  margin: 18px
+  margin: 18px;
 }
 /* @media (max-width: 420px) {
   .sidebar li .tooltip_menu{
@@ -258,8 +260,9 @@
   }
 } */
 .container{
-    margin-top: 5%;
+    margin-top: 3%;
     margin-bottom: 7%;
+
     background-color: var(--color-3);
     border-radius: 10px;
     width: 70%;
