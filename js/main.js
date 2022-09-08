@@ -20,3 +20,64 @@ function menuBtnChange() {
    closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
  }
 }
+
+
+// ------
+
+function onConfirmed(){
+  let timerInterval
+  const modalConEstilosBootstrap = Swal.mixin({
+    customClass: {
+      confirmButton: 'btn btn-success',
+      cancelButton: 'btn m-3'
+    },
+    buttonsStyling: false
+  })
+  modalConEstilosBootstrap.fire({
+    title: '¿Estas seguro de que deseas cancelar la póliza 1234567890?',
+    text: "Despues de cancelar la póliza, se generará un comprobante.",
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Cancelar Póliza',
+    cancelButtonText: 'No Cancelar Póliza',
+    reverseButtons: true,
+   
+  }).then((result)=>{
+    if(result.isConfirmed){
+      
+      modalConEstilosBootstrap.fire(
+        'Póliza Borrada',
+        '',
+        'success'
+      )
+    } else if (
+      /* Read more about handling dismissals below */
+      result.dismiss === Swal.DismissReason.cancel
+    ) {
+      modalConEstilosBootstrap.fire(
+        'La Póliza no se Canceló.',
+        '',
+        'error'
+      )
+    }
+  })
+}
+
+function onModify(){
+  const Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener('mouseenter', Swal.stopTimer)
+      toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
+  })
+  
+  Toast.fire({
+    icon: 'success',
+    title: 'Datos guardados exitosamente.'
+  })
+}

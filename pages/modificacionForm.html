@@ -7,9 +7,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/tabs.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
     
@@ -103,6 +102,7 @@
             </div>
         </nav>
         <div class="container">
+            <h2>Modificar Datos del Asegurado</h2>
           <!-- TAB CONTROLLERS -->
           <input id="panel-1-ctrl" class="panel-radios" type="radio" name="tab-radios" checked hidden>
           <input id="panel-2-ctrl" class="panel-radios" type="radio" name="tab-radios" hidden>
@@ -118,7 +118,7 @@
                       <label class="panel-label" for="panel-1-ctrl">Datos del Asegurado</label>
                   </li>
                   <li id="li-for-panel-2">
-                      <label class="panel-label" for="panel-2-ctrl">Articulo 492 Persona Física</label>
+                      <label class="panel-label" for="panel-2-ctrl">Art.    492 Persona Física</label>
                   </li>
   
               <label id="close-nav-label" for="nav-ctrl">Close</label>
@@ -260,6 +260,14 @@
                                               <label for="fPago" class="form-label col-form-label col-form-label-sm">Forma de Pago</label>
                                               <input type="text" class="form-control form-control-sm" id="fPago">
                                           </div>
+                                      </div>
+                                      <div class="row mt-2">
+                                        <div class="col-md-12">
+                                          <div class="d-grid gap-2 d-md-block text-end">
+                                            <button class="btn btn-sm" type="button">Limpiar Formulario</button>
+                                            <button class="btn btn-success btn-sm" onclick="onModify()" type="button">Modificar Datos</button>
+                                          </div>
+                                        </div>
                                       </div>
                                   </div>
                               </div>
@@ -422,10 +430,9 @@
                                   <div class="col-md-6 col-sm-12">
                                       <label for="fPago" class="form-label col-form-label col-form-label-sm">Fecha de Nacimiento</label>
                                       <div class="row">
-                                      <label for="year" class="form-label col-form-label col-form-label-sm col-sm-1">Año</label>
-                                      <div class="col-md-3">
+                                      <div class="col-md-4">
                                           <select name="" id="year" class="form-select form-select-sm">
-                                          <option value="">Selecciona una Opción</option>
+                                          <option value="" disabled selected>Año</option>
                                           <option value="2005">2005</option>
                                           <option value="2004">2004</option>
                                           <option value="2003">2003</option>
@@ -507,10 +514,9 @@
                                           <option value="1927">1927</option>
                                           </select>
                                       </div>
-                                      <label for="month" class="form-label col-form-label col-form-label-sm col-sm-1">Mes</label>
-                                      <div class="col-md-3">
+                                      <div class="col-md-4">
                                           <select name="" id="month" class="form-select form-select-sm">
-                                          <option value="">Selecciona una Opción</option>
+                                          <option value="" disabled selected>Mes</option>
                                           <option value="01">01</option>
                                           <option value="02">02</option>
                                           <option value="03">03</option>
@@ -525,10 +531,9 @@
                                           <option value="12">12</option>
                                           </select>
                                       </div>
-                                      <label for="day" class="form-label col-form-label col-form-label-sm col-sm-1">Día</label>
-                                      <div class="col-md-3">
+                                      <div class="col-md-4">
                                           <select name="" id="day" class="form-select form-select-sm">
-                                          <option value="">Selecciona una Opción</option>
+                                          <option value="" disabled selected>Día</option>
                                           <option value="01">01</option>
                                           <option value="02">02</option>
                                           <option value="03">03</option>
@@ -569,6 +574,14 @@
                                       <input type="text" class="form-control form-control-sm" id="activ">
                                   </div>
                               </div>
+                              <div class="row mt-2">
+                                <div class="col-md-12">
+                                  <div class="d-grid gap-2 d-md-block text-end">
+                                    <button class="btn btn-sm" type="button">Limpiar Formulario</button>
+                                    <button class="btn btn-success btn-sm" onclick="onModify()" type="button">Modificar Datos</button>
+                                  </div>
+                                </div>
+                              </div>
                           </main>
                       </section>
                   </form>
@@ -577,5 +590,6 @@
       </div>
     </section>
   <script src="/js/main.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
