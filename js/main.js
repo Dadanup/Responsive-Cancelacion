@@ -25,42 +25,44 @@ function menuBtnChange() {
 // ------
 
 function onConfirmed(){
-  let timerInterval
-  const modalConEstilosBootstrap = Swal.mixin({
-    customClass: {
-      confirmButton: 'btn btn-success',
-      cancelButton: 'btn m-3'
-    },
-    buttonsStyling: false
-  })
-  modalConEstilosBootstrap.fire({
-    title: '¿Estas seguro de que deseas cancelar la póliza 1234567890?',
-    text: "Despues de cancelar la póliza, se generará un comprobante.",
-    icon: 'warning',
-    showCancelButton: true,
-    confirmButtonText: 'Cancelar Póliza',
-    cancelButtonText: 'No Cancelar Póliza',
-    reverseButtons: true,
+  window.print()
+  // const modalConEstilosBootstrap = Swal.mixin({
+  //   customClass: {
+  //     confirmButton: 'btn btn-success',
+  //     cancelButton: 'btn m-3'
+  //   },
+  //   buttonsStyling: false
+  // })
+  // modalConEstilosBootstrap.fire({
+  //   title: '¿Estas seguro de que deseas cancelar la póliza 1234567890?',
+  //   text: "Despues de cancelar la póliza, se generará un comprobante.",
+  //   icon: 'warning',
+  //   showCancelButton: true,
+  //   confirmButtonText: 'Cancelar Póliza',
+  //   cancelButtonText: 'No Cancelar Póliza',
+  //   reverseButtons: true,
    
-  }).then((result)=>{
-    if(result.isConfirmed){
+  // }).then((result)=>{
+  //   if(result.isConfirmed){
       
-      modalConEstilosBootstrap.fire(
-        'Póliza Borrada',
-        '',
-        'success'
-      )
-    } else if (
-      /* Read more about handling dismissals below */
-      result.dismiss === Swal.DismissReason.cancel
-    ) {
-      modalConEstilosBootstrap.fire(
-        'La Póliza no se Canceló.',
-        '',
-        'error'
-      )
-    }
-  })
+  //     modalConEstilosBootstrap.fire(
+  //       'Póliza Borrada',
+  //       '',
+  //       'success'
+  //     )
+  //     window.printScreen()
+
+  //   } else if (
+  //     /* Read more about handling dismissals below */
+  //     result.dismiss === Swal.DismissReason.cancel
+  //   ) {
+  //     modalConEstilosBootstrap.fire(
+  //       'La Póliza no se Canceló.',
+  //       '',
+  //       'error'
+  //     )
+  //   }
+  // })
 }
 
 function onModify(){
@@ -80,4 +82,18 @@ function onModify(){
     icon: 'success',
     title: 'Datos guardados exitosamente.'
   })
+}
+
+//--------------
+
+function onValidate(){
+  var toogle = document.getElementById("SwitchCheck")
+  var btn = document.getElementById("disabledButton")
+
+  if (toogle.checked == true) {
+    btn.disabled = false
+  } else {
+    btn.disabled = true  
+  }
+
 }
